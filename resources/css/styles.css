@@ -45,7 +45,7 @@ div.containerlogo p {
 	   }
 
 div.menuitem1svg {
-		position:fixed;
+		position:relative;
 		height:100%;
 		width:60%;
 		left:1%;
@@ -61,7 +61,7 @@ div.menuitem1svg:hover {
        } 
 
 div.menuitem2svg {
-		position:fixed;
+		position:relative;
 		height:100%;
 		width:50%;
 		left:30%;
@@ -77,7 +77,7 @@ div.menuitem2svg:hover {
        } 	    	    	   
 
 div.menuitem3svg {
-		position:fixed;
+		position:relative;
 		height:100%;
 		width:40%;
 		left:60%;
@@ -93,7 +93,7 @@ div.menuitem3svg:hover {
        } 	    	    
 
 div.menuitem4svg {
-		position:fixed;
+		position:relative;
 		height:100%;
 		width:40%;
 		left:92%;
