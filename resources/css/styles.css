@@ -41,7 +41,7 @@ div.containerlogo p {
 div.menuitem1svg {
 		position:fixed;
 		height:100%;
-		width:100%;
+		width:70%;
 		
 		
     	transform: rotate(45deg);
@@ -58,7 +58,7 @@ div.menuitem1svg:hover {
 div.menuitem2svg {
 		position:fixed;
 		height:100%;
-		width:100%;
+		width:70%;
 		
 		left:30%;
     	transform: rotate(45deg);
@@ -75,7 +75,7 @@ div.menuitem2svg:hover {
 div.menuitem3svg {
 	position:fixed;
 		height:100%;
-		width:100%;
+		width:70%;
 		
 		left:60%;
     	transform: rotate(45deg);
@@ -92,7 +92,7 @@ div.menuitem3svg:hover {
 div.menuitem4svg {
 	position:fixed;
 		height:100%;
-		width:100%;
+		width:70%;
 		
 		left:92%;
     	transform: rotate(45deg);
