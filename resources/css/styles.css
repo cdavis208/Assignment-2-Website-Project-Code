@@ -1,5 +1,4 @@
 body {
-		
 		margin:0;
 		padding:0;
 		font-family: Sans-Serif;
@@ -28,83 +27,133 @@ div.containerlogo {
 
 div.containerlogo p {
   	    margin: 0;
-        background: yellow;
    	    position: absolute;
 		top:30%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
 		height: 100px;
-		
 	   }
 
 div.menuitem1svg {
 		position:fixed;
 		height:100%;
-		width:70%;
-		
-		
+		width:40%;
     	transform: rotate(45deg);
 		fill:white;
 		stroke-width:10;
 		stroke:rgb(0,0,0); 
-		transition: fill .2s ease-in;
+		transition: all .4s ease-in;
+		opacity: 0.3;
 	   } 
 
 div.menuitem1svg:hover {
         fill: rgb(203,153,201);
+		opacity: 1.0;
        } 
+
+div.menuitem1svg p {
+		position:fixed;
+		width: 100%;
+		height: auto;
+		font-size:80%;
+		right:32%;
+		top:28%;
+		fill: white;
+		transform:rotate(-90deg);
+}
 
 div.menuitem2svg {
 		position:fixed;
 		height:100%;
-		width:70%;
-		
+		width:40%;
 		left:30%;
     	transform: rotate(45deg);
 		fill:white;
 		stroke-width:10;
 		stroke:rgb(0,0,0);  
-		transition: fill .2s ease-in; 
+		transition: all .4s ease-in; 
+		opacity: 0.3;
 	   } 
 
 div.menuitem2svg:hover {
         fill: rgb(201,201,255);
-       } 	    	    	   
+		opacity: 1.0;
+       } 
+
+div.menuitem2svg p {
+		position:fixed;
+		width: 100%;
+		height: auto;
+		right:35%;
+		top:30%;
+		font-size:80%;
+		fill: white;
+		transform:rotate(-90deg);
+		
+}	   	    	    	   
 
 div.menuitem3svg {
 	position:fixed;
 		height:100%;
-		width:70%;
-		
+		width:40%;
 		left:60%;
     	transform: rotate(45deg);
 		fill:white;
 		stroke-width:10;
 		stroke:rgb(0,0,0); 
-		transition: fill .2s ease-in;  
+		transition: all .4s ease-in; 
+		opacity: 0.3; 
+		
 	   } 
 
 div.menuitem3svg:hover {
         fill: rgb(119,158,203);
-       } 	    	    
+		opacity: 1.0;
+       } 
+
+div.menuitem3svg p {
+		position:fixed;
+		width: 100%;
+		height: auto;
+		right:35%;
+		top:30%;
+		font-size:80%;
+		fill: white;
+		transform:rotate(-90deg);
+		overflow-wrap: 1;
+		
+}	   	    	    
 
 div.menuitem4svg {
 	position:fixed;
 		height:100%;
-		width:70%;
-		
+		width:40%;
 		left:92%;
     	transform: rotate(45deg);
 		fill:white;
 		stroke-width:10;
 		stroke:rgb(0,0,0);  
-		transition: fill .2s ease-in;  
+		transition: all .4s ease-in; 
+		opacity: 0.3; 
 	   }
 
 div.menuitem4svg:hover {
         fill: rgb(225,247,213);
-       }  	   
+		opacity: 1.0;
+       }
+
+div.menuitem4svg p {
+		position:fixed;
+		width: 100%;
+		height: auto;
+		right:37%;
+		top:35%;
+		font-size:80%;
+		fill: white;
+		transform:rotate(-90deg);
+		
+}	     	   
 
 main {
 		padding-bottom: 10010px;
