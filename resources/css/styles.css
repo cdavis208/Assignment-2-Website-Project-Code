@@ -121,8 +121,7 @@ div.menuitem3svg p {
 		font-size:80%;
 		fill: white;
 		transform:rotate(-90deg);
-		overflow-wrap: 1;
-		
+		text-anchor: center;
 }	   	    	    
 
 div.menuitem4svg {
