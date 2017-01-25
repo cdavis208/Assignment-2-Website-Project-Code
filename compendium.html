@@ -14,6 +14,7 @@
 
 	<div class=containerlogo>
   <p><img src="resources/images/logo.png" alt="Subarmine Compendium" align="middle" /></p>
+
  </div>
  
 
@@ -30,10 +31,14 @@
 	</div>
 	</div>
 </ul>
-
+<form action="">
+  Search Compendium: <input type="text" name="search" id="search"><br>
+  
+  <input type="submit" onclick="myFunction()" value="Submit">
+</form>
   </header>
 
-
+<label id="subClass"></label>
 
   <div class="slider-holder">
         <span id="slider-image-1"></span>
@@ -50,15 +55,15 @@
             <img src="resources/images/submarine1.jpg" class="slider-image img1" />
             <img src="resources/images/submarine2.jpg" class="slider-image img2" />
             <img src="resources/images/submarine3.jpg" class="slider-image img3" />
-						<img src="resources/images/submarine1.jpg" class="slider-image img4" />
-            <img src="resources/images/submarine2.jpg" class="slider-image img5" />
-            <img src="resources/images/submarine3.jpg" class="slider-image img6" />
-						<img src="resources/images/submarine1.jpg" class="slider-image img7" />
-            <img src="resources/images/submarine2.jpg" class="slider-image img8" />
-            <img src="resources/images/submarine3.jpg" class="slider-image img9" />
+						<img src="resources/images/submarine4.jpg" class="slider-image img4" />
+            <img src="resources/images/submarine5.jpg" class="slider-image img5" />
+            <img src="resources/images/submarine6.jpg" class="slider-image img6" />
+						<img src="resources/images/submarine7.jpg" class="slider-image img7" />
+            <img src="resources/images/submarine8.jpg" class="slider-image img8" />
+            <img src="resources/images/submarine9.jpg" class="slider-image img9" />
         </div>
 
-        <div class="button-holder">
+        <div class="button-holder" onclick="myFunction()">
             <a href="#slider-image-1" class="slider-change"> <img src="resources/images/ukFlagIcon.png"></a>
             <a href="#slider-image-2" class="slider-change"><img src="resources/images/germanFlagIcon.png"></a>
             <a href="#slider-image-3" class="slider-change"><img src="resources/images/franceFlagIcon.png"></a>
@@ -71,6 +76,6 @@
         </div>
     </div>
     
-    	
+    <script type="text/javascript" src="resources/javascript/searchFunctionCompendium.js"></script>	
 	</body>
 </html>	

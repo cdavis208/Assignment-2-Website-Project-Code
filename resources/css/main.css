@@ -17,6 +17,7 @@ header {
 		border-color:black;
 	   }
 
+
 div.navcontainer {
 		height: 10em;
    		position: relative;
@@ -94,3 +95,21 @@ ul.topnav li.icon {
 	display: none;
 	}
 
+form{
+	padding:0;
+	margin:0;
+	position:relative;
+	top:-120px;
+	right:15%;
+	float:right;
+}
+
+label {
+	color:white;
+	font-size: 24;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	position:relative;
+	right: -42%;
+	top:50px;
+	z-index:100;
+}
