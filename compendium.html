@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Submarine Compendium</title>
 		<link rel="stylesheet" href="resources/css/main.css">
     <link rel="icon" href="resources/images/favicon.png">
@@ -12,14 +12,13 @@
 
 <header> 
 
-	<div class=containerlogo>
+	<h1>
   <p><img src="resources/images/logo.png" alt="Subarmine Compendium" align="middle" /></p>
 
- </div>
+ </h1>
  
-
-<ul class="topnav" id="myTopnav">
-	<div class="navcontainer">
+<nav>
+<ul class="nav">
 		<div class="navleft">
   <li><a href="Submarine Compendium">Submarine Compendium</a></li>
   <li><a href="About The Compendium">About The Compendium</a></li>
@@ -29,8 +28,9 @@
   <li><a href="Submarine Museums">Submarine Mueseums</a></li>
   
 	</div>
-	</div>
 </ul>
+ </nav>
+
 <form action="">
   Search Compendium: <input type="text" name="search" id="search"><br>
   
@@ -38,7 +38,9 @@
 </form>
   </header>
 
-<label id="subClass"></label>
+<label class="subClass" id="subClass"></label>
+
+ 
 
   <div class="slider-holder">
         <span id="slider-image-1"></span>
@@ -61,10 +63,34 @@
 						<img src="resources/images/submarine7.jpg" class="slider-image img7" />
             <img src="resources/images/submarine8.jpg" class="slider-image img8" />
             <img src="resources/images/submarine9.jpg" class="slider-image img9" />
+
+            <section class="wepinfo"> 
+            <img src="resources/images/weaponInfo.png"/> 
+            <br>
+            <label id="wepinfoclass"></label>
+            </section> 
+
+            <section class="engineinfo">
+            <img src="resources/images/engineInfo.png"/>
+            <br>
+            <label id="engineinfoclass"></label>
+            </section>
+
+            <section class="operationinfo">
+            <img src="resources/images/operationInfo.png"/>
+            <br>
+            <label id="operationinfoclass"></label>
+            </section>
+
+            <section class="subinfo"> 
+            <img src="resources/images/aboutInfo.png"/>
+            <br>
+            <label id="subinfoclass"></label>
+            </section>
         </div>
 
-        <div class="button-holder" onclick="myFunction()">
-            <a href="#slider-image-1" class="slider-change"> <img src="resources/images/ukFlagIcon.png"></a>
+        <div class="button-holder" id="button-holder" onclick="setTimeout(myFunction,2000)" >
+            <a href="#slider-image-1" class="slider-change"> <img src="resources/images/ukFlagIcon.png" ></a>
             <a href="#slider-image-2" class="slider-change"><img src="resources/images/germanFlagIcon.png"></a>
             <a href="#slider-image-3" class="slider-change"><img src="resources/images/franceFlagIcon.png"></a>
 						<a href="#slider-image-4" class="slider-change"> <img src="resources/images/usFlagIcon.png"></a>
@@ -75,7 +101,7 @@
             <a href="#slider-image-9" class="slider-change"><img src="resources/images/chinaFlagIcon.png"></a>
         </div>
     </div>
-    
-    <script type="text/javascript" src="resources/javascript/searchFunctionCompendium.js"></script>	
+   
+    <script type="text/javascript" src="resources/javascript/subInformationLogic.js"></script>	
 	</body>
 </html>	
