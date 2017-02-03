@@ -21,7 +21,7 @@
 	</div>
 	<div class="navright">
   <li><a href="howitworks.html">How A Submarine Works</a></li>
-  <li><a href="museum.html">Submarine Mueseums</a></li>
+  <li><a href="museum.html">Submarine Mueseum</a></li>
   
 	</div>
 </ul>
@@ -39,25 +39,21 @@
  </h1>
   </header>
 
-	<style>
-       #map {
-        height: 400px;
-        width: 40%;
-       }
-    </style>
+
+    
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
+    <h3>Roayl Navy Submarine Museum</h3>
     <div id="map"></div>
     <script>
       function initMap() {
-        var leicester = {lat: 52.6360565, lng: -1.2011399};
+        var Portsmouth = {lat: 50.7882888, lng: -1.1193841};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: leicester
+          zoom: 16,
+          center: Portsmouth
         });
         var marker = new google.maps.Marker({
-          position: leicester,
+          position: Portsmouth,
           map: map
         });
       }
@@ -65,6 +61,7 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmTn2SzDyKCeKVtRItfLvaZa_5a2DGy80&callback=initMap">
     </script>
+	
 	
 	</body>
 </html>	

@@ -174,3 +174,16 @@ section.operationinfo {
 .container h1 {
     color: white;
 }
+
+h3 {
+	color: white;
+	margin-left:40%;
+}
+
+#map {
+	 height: 400px;
+        width: 80%;
+		left:10%
+}
+
+
