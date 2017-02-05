@@ -1,0 +1,104 @@
+
+html, body { 
+  background: white; 
+  
+ height: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.subimage {
+	position:relative;
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.fact1{
+	position:relative;
+	max-width:5%;
+	max-height:5%;
+	margin-top:-25%;
+	left:10%;
+}
+
+.fact2{
+	position:relative;
+	max-width:5%;
+	max-height:5%;
+	margin-top:5%;
+	left:25%;
+}
+
+.fact3{
+	position:relative;
+	max-width:5%;
+	max-height:5%;
+	margin-top:-5%;
+	left:50%;
+}
+
+.fact4{
+	position:relative;
+	max-width:5%;
+	max-height:5%;
+	margin-top:-10%;
+	left:35%;
+}
+
+.fact5{
+	position:relative;
+	float:right;
+	max-width:5%;
+	max-height:5%;
+	margin-top:-5%;
+	right:12%;
+}
+
+.fact1 p {
+  display: none;
+  color: #000000;
+}
+
+.fact1:hover p {
+  background-color:rgb(0,83,98);
+  display: block;
+
+}
+
+.fact2 p {
+  display: none;
+  color: #000000;
+}
+.fact2:hover p {
+  background-color:rgb(0,83,98);
+  display: block;
+}
+
+.fact3 p {
+  display: none;
+  color: #000000;
+}
+.fact3:hover p {
+  background-color:rgb(0,83,98);
+  display: block;
+}
+
+.fact4 p {
+  display: none;
+  color: #000000;
+}
+.fact4:hover p {
+  background-color:rgb(0,83,98);
+  display: block;
+}
+
+.fact5 p {
+  display: none;
+  color: #000000;
+}
+.fact5:hover p {
+  background-color:rgb(0,83,98);
+  display: block;
+}
