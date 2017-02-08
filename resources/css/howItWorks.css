@@ -1,11 +1,12 @@
 
 html, body { 
   background: white; 
-  
+  margin:0 !important;
+	padding:0 !important;
+	width:100% !important;
  height: 100% !important;
 
-    margin: 0 !important;
-    padding: 0 !important;
+
 }
 
 .subimage {
@@ -20,6 +21,8 @@ html, body {
 	max-width:5%;
 	max-height:5%;
 	margin-top:-25%;
+	height: auto;
+    width: auto\9; /* ie8 */
 	left:10%;
 }
 
@@ -28,6 +31,8 @@ html, body {
 	max-width:5%;
 	max-height:5%;
 	margin-top:5%;
+	height: auto;
+    width: auto\9; /* ie8 */
 	left:25%;
 }
 
@@ -36,6 +41,8 @@ html, body {
 	max-width:5%;
 	max-height:5%;
 	margin-top:-5%;
+	height: auto;
+    width: auto\9; /* ie8 */
 	left:50%;
 }
 
@@ -44,6 +51,8 @@ html, body {
 	max-width:5%;
 	max-height:5%;
 	margin-top:-10%;
+	height: auto;
+    width: auto\9; /* ie8 */
 	left:35%;
 }
 
@@ -53,6 +62,8 @@ html, body {
 	max-width:5%;
 	max-height:5%;
 	margin-top:-5%;
+	height: auto;
+    width: auto\9; /* ie8 */
 	right:12%;
 }
 
@@ -62,8 +73,10 @@ html, body {
 }
 
 .fact1:hover p {
+	
+	position:absolute;
   background-color:rgb(0,83,98);
-  display: block;
+  display: inline-block;
 
 }
 
@@ -72,8 +85,9 @@ html, body {
   color: #000000;
 }
 .fact2:hover p {
+	position:absolute;
   background-color:rgb(0,83,98);
-  display: block;
+  display: inline-block;
 }
 
 .fact3 p {
@@ -82,7 +96,7 @@ html, body {
 }
 .fact3:hover p {
   background-color:rgb(0,83,98);
-  display: block;
+  display: inline-block;
 }
 
 .fact4 p {
@@ -91,7 +105,7 @@ html, body {
 }
 .fact4:hover p {
   background-color:rgb(0,83,98);
-  display: block;
+  display: inline-block;
 }
 
 .fact5 p {
@@ -100,5 +114,5 @@ html, body {
 }
 .fact5:hover p {
   background-color:rgb(0,83,98);
-  display: block;
+  display: inline-block;
 }
