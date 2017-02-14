@@ -171,8 +171,64 @@ section.operationinfo {
     background: url(polina.jpg) no-repeat;
     background-size: cover;
 }
+
 .container h1 {
     color: white;
+}
+
+section.mainBox {
+	width:100%;
+	position:relative;
+	
+}
+
+section.img {
+	display:block;
+	width:100%;
+}
+
+figure {
+	float:right;
+}
+
+section.box1 {
+	width:50%;
+	margin:0 auto;
+	overflow:none;
+	margin-top:5%;
+}
+
+section.box1 p{
+	padding-bottom:1em;
+	float:right;
+	text-align: left;
+	width:70%;
+}
+
+section.box2 {
+	width:50%;
+	margin:0 auto;
+	overflow:auto;
+}
+
+section.box2 p{
+	padding-bottom:1em;
+	float:left;
+	text-align: right;
+	width:70%;
+}
+
+section.box3 {
+	width:50%;
+	margin:0 auto;
+	overflow:auto;
+}
+
+section.box3 p{
+	padding-bottom:1em;
+	float:right;
+	text-align: left;
+	width:70%;
 }
 
 h3 {
