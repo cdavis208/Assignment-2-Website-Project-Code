@@ -1,26 +1,26 @@
-{ "lecturers": [
+{ "aboutPage": [
   { 
-    "firstName":"Dave" ,
-    "lastName":"Everitt"
+    "title":"About this website" ,
+    "reason1.1":"What is the compendium",
+    "reason2.1":"Why it was created",
+    "reason3.1":"History of development"
   },
   {
-    "firstName":"Fania",
-    "lastName":"Raczinski"
+    "title":"Motivations for website" ,
+    "reason1.2":"Passion of submarines",
+    "reason2.2":"Easy to use compendium",
+    "reason3.2":"Place to add more knowledge"
   },
   {
-    "firstName":"Luke",
-    "lastName":"Attwood"
+    "title":"Technologies used" ,
+    "reason1.3":"HTML5",
+    "reason2.3":"CSS3",
+    "reason3.3":"Javascript"
   },
   {
-    "firstName":"Jenny",
-    "lastName":"Carter"
-  },
-  {
-    "firstName":"David",
-    "lastName":"Smallwood"
-  },
-  {
-    "firstName":"Clinton",
-    "lastName":"Ingrams"
+    "title":"About me",
+    "reason1.4":"Who am I",
+    "reason2.4":"My passion",
+    "reason3.4":"Other projects"
   }
 ]}
