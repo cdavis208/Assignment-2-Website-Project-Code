@@ -19,6 +19,8 @@
     let i;
     for(i = 0; i < arr.length; i++) {
       theData += `<option>${arr.getElementById.title}</option>`;
+      theData += `<option>test</option>`;
+      alert("test");
     }
     feedJSONdata.innerHTML = theData;
   }
