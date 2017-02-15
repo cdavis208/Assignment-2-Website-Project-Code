@@ -1,6 +1,8 @@
 (function(){
 
   let xmlhttp = new XMLHttpRequest();
+  
+  let url = "https://raw.githubusercontent.com/cdavis208/Assignment-2-Website-Project-Code/master/resources/data/data.json";
 
   xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
@@ -8,19 +10,23 @@
       gatherData(myArr);
     }
   };
-  xmlhttp.open("GET", "https://cdavis208.github.io/Assignment-2-Website-Project-Code/resources/data/data.json", true);
+  xmlhttp.open("GET", url, true);
   xmlhttp.send();
 
-  let feedJSONdata = document.getElementById("sel");
+  let demoJSON = document.getElementById("sel");
 
   function gatherData(arr) {
     let theData = "";
-    
+     
     let i;
-    for(i = 0; i < arr.length; i++) {
+    alert("test");
+    for(i = 0; i < 7; i++) {
+      
       theData += `<option>${arr.getElementById.title}</option>`;
-    
+     
     }
-feedJSONdata.innerHTML(theData);
+    demoJSON.innerHTML = theData;
+   
   }
+
 }());

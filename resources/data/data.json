@@ -1,4 +1,4 @@
-{ "aboutPage": [
+[
   { 
     "title":"About this website" ,
     "reason1.1":"What is the compendium",
@@ -23,4 +23,4 @@
     "reason2.4":"My passion",
     "reason3.4":"Other projects"
   }
-]}
+]
