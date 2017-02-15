@@ -8,7 +8,7 @@
       gatherData(myArr);
     }
   };
-  xmlhttp.open("GET", "resources/data/data.json", true);
+  xmlhttp.open("GET", "https://cdavis208.github.io/Assignment-2-Website-Project-Code/resources/data/data.json", true);
   xmlhttp.send();
 
   let feedJSONdata = document.getElementById("sel");
@@ -18,10 +18,10 @@
     
     let i;
     for(i = 0; i < arr.length; i++) {
-      theData += `<option>${arr.getElementById.title}</option>`;
+      theData += `<option>${arr.getElementById.id}</option>`;
       theData += `<option>test</option>`;
       alert("test");
     }
-    feedJSONdata.innerHTML = theData;
+feedJSONdata.append("<option> dfdfdf </option>");
   }
 }());
