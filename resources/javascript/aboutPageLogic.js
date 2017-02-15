@@ -18,10 +18,9 @@
     
     let i;
     for(i = 0; i < arr.length; i++) {
-      theData += `<option>${arr.getElementById.id}</option>`;
-      theData += `<option>test</option>`;
-      alert("test");
+      theData += `<option>${arr.getElementById.title}</option>`;
+    
     }
-feedJSONdata.innerHTML("<option> dfdfdf </option>");
+feedJSONdata.innerHTML(theData);
   }
 }());
