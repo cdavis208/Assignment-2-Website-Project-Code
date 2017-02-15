@@ -19,8 +19,8 @@
     let theData = "";
      
     let i;
-    alert("test");
-    for(i = 0; i < 7; i++) {
+    
+    for(i = 0; i < arr.length; i++) {
       
       theData += `<option>${arr.getElementById.title}</option>`;
      
