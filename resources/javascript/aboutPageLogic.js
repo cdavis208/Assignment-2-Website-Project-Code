@@ -22,6 +22,6 @@
       theData += `<option>test</option>`;
       alert("test");
     }
-feedJSONdata.append("<option> dfdfdf </option>");
+feedJSONdata.innerHTML("<option> dfdfdf </option>");
   }
 }());
