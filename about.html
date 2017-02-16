@@ -7,7 +7,7 @@
     <link rel="icon" href="resources/images/favicon.png">
 	</head>
 	
-	<body>
+	<body onload="myFunction()">
 
 <header> 
 	
@@ -28,7 +28,7 @@
 <form action="">
   Search Compendium: <input type="text" name="search" id="search"><br>
   
-  <input type="submit" onclick="myFunction()" value="Submit">
+  <input type="submit" value="Submit">
 </form>
 
 <h1>
@@ -39,11 +39,11 @@
 	
 		<!-- About -->
 					
-								<h1 class="text-center"><span class="page-heading">About</span></h1>
+								<h1 class="aboutTitleFormat" ><span id ="aboutPageSub" >About</span></h1>
 
 <section class="mainBox">
 
-	<select id="sel" onload="function()"></select>
+	<select id="sel"  onchange="setTimeout(updateAboutTitles,100)"> </select>
 
 									<section class="box1">
 										<img src="resources/images/usFlagIcon.png" >

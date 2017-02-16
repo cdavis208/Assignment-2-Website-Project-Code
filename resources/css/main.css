@@ -59,6 +59,11 @@ h1 {
 		
 	   }
 
+h1.aboutTitleFormat {
+	position:relative;
+	text-align: center;
+}	   
+
 
      	   						
 ul.nav {
