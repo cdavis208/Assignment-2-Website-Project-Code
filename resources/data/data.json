@@ -1,8 +1,5 @@
 { "aboutPage": [
   { 
-    "title":"Please select"  
-  },
-  { 
     "title":"About this website" ,
     "reason1.1":"What is the compendium",
     "reason2.1":"Why it was created",
