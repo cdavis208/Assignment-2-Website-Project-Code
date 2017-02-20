@@ -4,6 +4,7 @@ function myFunction(){
   let xmlhttp = new XMLHttpRequest();
   let aboutTitle = document.getElementById("aboutPageSub");
   
+  
   let url = "https://raw.githubusercontent.com/cdavis208/Assignment-2-Website-Project-Code/master/resources/data/data.json";
 
   xmlhttp.onreadystatechange = function() {
@@ -50,6 +51,9 @@ function updateAboutTitles() {
     let reason1Data = "";
     let reason2Data = "";
     let reason3Data = "";
+    let box1Text = document.getElementById("box1Txt");
+    let box2Text = document.getElementById("box2Txt");
+    let box3Text = document.getElementById("box3Txt");
     let aboutTitle = document.getElementById("aboutPageSub");
 
     
@@ -57,18 +61,29 @@ function updateAboutTitles() {
    
      if (selectedVal == 0){
 aboutTitle.innerHTML = arr.aboutPage[0].title;
-
+box1Text.innerHTML = "sdfdsfsdfsdfdsfdsdf";
+box2Text.innerHTML = "sdfdsfsdfsdfdsfdsdf";
+box3Text.innerHTML = "sdfdsfsdfsdfdsfdsdf";
     } else 
     if (selectedVal == 1){
 aboutTitle.innerHTML = arr.aboutPage[1].title;
+box1Text.innerHTML = "zzzzzzzzzzzzzzzzzzzz";
+box2Text.innerHTML = "zzzzzzzzzzzzzzzzzzzz";
+box3Text.innerHTML = "zzzzzzzzzzzzzzzzzzzz";
     } else 
 
      if (selectedVal == 2){
 aboutTitle.innerHTML = arr.aboutPage[2].title;
+box1Text.innerHTML = "vvvvvvvvvvvvvvvvvvvv";
+box2Text.innerHTML = "vvvvvvvvvvvvvvvvvvvv";
+box3Text.innerHTML = "vvvvvvvvvvvvvvvvvvvv";
     }
 
     if (selectedVal == 3){
 aboutTitle.innerHTML = arr.aboutPage[3].title;
+box1Text.innerHTML = "pppppppppppppppppppppp";
+box2Text.innerHTML = "pppppppppppppppppppppp";
+box3Text.innerHTML = "pppppppppppppppppppppp";
     }
 
 }
