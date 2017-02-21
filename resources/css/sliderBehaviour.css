@@ -1,4 +1,108 @@
+
         .slider-holder
+        {
+           width: 100%;
+           height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+
+        .image-holder
+        {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow:hidden;
+        }
+       
+        
+        .slider-image
+        {
+           float: left;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            left: 100%;
+            height:100%;
+            width:100%;
+            opacity:0.8;
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }
+
+        #slider-image-1:target ~ .image-holder .img1
+        {
+            left: 0%;
+        }
+        
+        #slider-image-2:target ~ .image-holder .img2
+        {
+            left: 0%;
+        }
+        
+        #slider-image-3:target ~ .image-holder .img3
+        {
+            left: 0%;
+        }
+
+		 #slider-image-4:target ~ .image-holder .img4
+        {
+            left: 0%;
+        }
+
+		 #slider-image-5:target ~ .image-holder .img5
+        {
+            left: 0%
+        }
+
+		 #slider-image-6:target ~ .image-holder .img6
+        {
+            left: 0%
+        }
+
+		 #slider-image-7:target ~ .image-holder .img7
+        {
+            left: 0%
+        }
+
+		 #slider-image-8:target ~ .image-holder .img8
+        {
+            left: 0%;
+        }
+
+		 #slider-image-9:target ~ .image-holder .img9
+        {
+            left: 0%;
+        }
+    
+        .button-holder
+        {
+            position: fixed;
+            bottom:0;
+            width: 100%;
+           
+        }
+        
+        .slider-change
+        {
+            display: inline-block;
+            height: 9%;
+            width: 9%;
+            border-radius: 5px;
+        }
+        .slider-change img
+        {
+            width: 100%;
+        }
+
+/* mobile first 576px*/
+                @media (min-width :576px){
+             .slider-holder
         {
             width: 100%;
             height: 500px;
@@ -85,6 +189,7 @@
         {
             position: relative;
             top: -80px;
+           
         }
         
         .slider-change
@@ -94,3 +199,6 @@
             width: 80px;
             border-radius: 5px;
         }
+        }
+/* mobile first end 576px */        
+

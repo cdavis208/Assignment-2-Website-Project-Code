@@ -129,8 +129,10 @@ section.wepinfo{
 	width:20%;
 	height:30%;
 	color:white;
+	font-size: 10px;
 	
 }
+
 
 section.subinfo {
     position:relative;
@@ -140,6 +142,7 @@ section.subinfo {
 	width:20%;
 	height:30%;
 	color:white;
+	font-size: 10px;
 }
 
 section.engineinfo {
@@ -150,6 +153,7 @@ section.engineinfo {
 	width:20%;
 	height:30%;
 	color:white;
+	font-size: 10px;
 }
 
 section.operationinfo {
@@ -160,6 +164,7 @@ section.operationinfo {
 	width:20%;
 	height:30%;
 	color:white;
+	font-size: 10px;
 }
 
 #background {
@@ -176,6 +181,7 @@ section.operationinfo {
     background: url(polina.jpg) no-repeat;
     background-size: cover;
 }
+
 
 .container h1 {
     color: white;
@@ -245,6 +251,25 @@ h3 {
 	 height: 400px;
         width: 80%;
 		left:10%
+}
+
+@media (min-width: 576px){
+	section.wepinfo{
+	font-size: 16px;
+	
+}
+section.operationinfo{
+	font-size: 16px;
+	
+}
+section.subinfo{
+	font-size: 16px;
+	
+}
+section.engineinfo{
+	font-size: 16px;
+	
+}
 }
 
 
