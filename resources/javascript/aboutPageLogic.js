@@ -54,6 +54,9 @@ function updateAboutTitles() {
     let box1Text = document.getElementById("box1Txt");
     let box2Text = document.getElementById("box2Txt");
     let box3Text = document.getElementById("box3Txt");
+    let box1Img = document.getElementById("box1img");
+    let box2Img = document.getElementById("box2img");
+    let box3Img = document.getElementById("box3img");
     let aboutTitle = document.getElementById("aboutPageSub");
 
     
@@ -64,6 +67,10 @@ aboutTitle.innerHTML = arr.aboutPage[0].title;
 box1Text.innerHTML = "sdfdsfsdfsdfdsfdsdf";
 box2Text.innerHTML = "sdfdsfsdfsdfdsfdsdf";
 box3Text.innerHTML = "sdfdsfsdfsdfdsfdsdf";
+box1Img.src="resources/images/aboutPageIcons/jsonicon.jpg"
+box2Img.src="resources/images/aboutPageIcons/dropdownmenu.gif"
+box3Img.src="resources/images/aboutPageIcons/mobilefirsticon.png"
+
     } else 
     if (selectedVal == 1){
 aboutTitle.innerHTML = arr.aboutPage[1].title;
