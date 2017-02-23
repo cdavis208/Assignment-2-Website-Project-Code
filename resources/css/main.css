@@ -195,6 +195,7 @@ section.mainBox {
 section.img {
 	display:block;
 	width:100%;
+	
 }
 
 
@@ -287,6 +288,27 @@ section.subinfo{
 }
 section.engineinfo{
 	font-size: 16px;
+	
+}
+
+section.wepinfo img{
+	width:30%;
+	height:30%;
+	
+}
+section.operationinfo img{
+	width:30%;
+	height:30%;
+	
+}
+section.subinfo img{
+	width:30%;
+	height:30%;
+	
+}
+section.engineinfo img{
+	width:30%;
+	height:30%;
 	
 }
 
