@@ -10,10 +10,9 @@
 	<body>
 
 <header> 
-
-	
- 
+<!--	
 <nav>
+	
 <ul class="nav">
 		<div class="navleft">
   <li><a href="compendium.html">Submarine Compendium</a></li>
@@ -25,18 +24,40 @@
   
 	</div>
 </ul>
- </nav>
+!-->
 
-<form action="">
-  Search Compendium: <input type="text" name="search" id="search"><br>
-  
-  <input type="submit" onclick="myFunction()" value="Submit">
-</form>
-
-<h1>
+<div>
   <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium" align="middle" /></a>
 
- </h1>
+ </div>
+
+<nav>
+<label for="show-menu" class="show-menu">Show Menu</label>
+	<input type="checkbox" id="show-menu" role="button">
+		<ul id="menu">
+		<li><a href="compendium.html">Submarine Compendium</a></li>
+		<li>
+			<a href="about.html">About The Compendium</a>
+			
+		</li>
+		<li>
+			<a href="howitworks.html">How A Submarine Works</a>
+			
+		</li>
+		<li><a href="museum.html">Submarine Mueseum</a></li>
+		
+		<li><form action="">
+  <input type="text" name="search" id="search"><br>
+  
+  <input type="submit" value="Submit">
+</form></li>
+	</ul>
+ 
+
+
+</nav>
+
+
   </header>
 
 
