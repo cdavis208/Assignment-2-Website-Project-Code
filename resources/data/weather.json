@@ -1,8 +1,0 @@
-{ "weatherData": [
-   {
-      "loc":"Plymouth",
-      "Lon":-3.52207,
-      "Lat":55.8864,
-      "Weather":"  api.openweathermap.org/data/2.5/weather?lat=55.8864&lon=-3.52207&mode=html"
-    }
-] }

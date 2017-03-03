@@ -473,6 +473,7 @@ li form {
 
 div.weather_widget {
 
+	margin-right:20%;
 	width:130px;
 	height:150px;
 	float:right;
