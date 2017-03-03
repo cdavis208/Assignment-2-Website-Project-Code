@@ -3,6 +3,6 @@
       "loc":"Plymouth",
       "Lon":-3.52207,
       "Lat":55.8864,
-      "Weather":"  api.openweathermap.org/data/2.5/weather?lat=55.8864&lon=-3.52207&mode=html"
+      "Weather":" api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=b200771efab9b77265a6c326873a3598"
     }
 ] }
