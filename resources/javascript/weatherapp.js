@@ -5,7 +5,7 @@ function myFunction(){
   let weatherinfo = document.getElementById("weatherinfo");
   
   
-  let url = "http://api.openweathermap.org/data/2.5/weather?q=Portsmouth,uk&units=metric&APPID=2c6f6a451968770732993eb4e86f7219";
+  let url = "https://api.openweathermap.org/data/2.5/weather?q=Portsmouth,uk&units=metric&APPID=2c6f6a451968770732993eb4e86f7219";
 
   xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
