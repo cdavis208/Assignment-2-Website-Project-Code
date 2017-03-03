@@ -471,5 +471,10 @@ li form {
 	display: block;
 }
 
+div.weather_widget {
 
+	width:130px;
+	height:150px;
+	float:right;
+}
 }
