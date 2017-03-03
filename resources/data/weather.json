@@ -3,6 +3,6 @@
       "loc":"Plymouth",
       "Lon":-3.52207,
       "Lat":55.8864,
-      "Weather": "api.openweathermap.org/data/2.5/weather?q=Portsmouth,uk&APPID=2c6f6a451968770732993eb4e86f7219"
+      "Weather": api.openweathermap.org/data/2.5/weather?q=Portsmouth,uk&APPID=2c6f6a451968770732993eb4e86f7219
     }
 ] }
