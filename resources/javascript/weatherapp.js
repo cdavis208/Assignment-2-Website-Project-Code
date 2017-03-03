@@ -22,10 +22,6 @@ function myFunction(){
   function gatherData(arr) {
 
     this.arr = arr;
-  
-    
       weatherinfo.innerHTML = arr.main.temp + "c";
-    
-    
   }
 }
