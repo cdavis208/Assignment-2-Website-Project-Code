@@ -22,6 +22,24 @@ function myFunction(){
   function gatherData(arr) {
 
     this.arr = arr;
-      weatherinfo.innerHTML = arr.main.temp + "c";
+      weatherinfo.innerHTML = arr.main.temp + "c"; //shows the local temperature is celcius 
   }
+
+  function updateClock() {
+    var now = new Date(), // returns the current date
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] //contains a list of all the months;
+        time = now.getHours() + ':' + now.getMinutes(), //creates a digital clock
+
+        // a cleaner way than string concatenation
+        date = [now.getDate(), 
+                months[now.getMonth()],
+                now.getFullYear()].join(' ');
+
+    // set the content of the element with the ID time to the formatted string
+    document.getElementById('time').innerHTML = [date, time].join(' | ');
+
+    // call this function again in 1000ms
+    setTimeout(updateClock, 1000); //makes sure the clock is always ticking when minutes change
+}
+updateClock(); // initial call
 }

@@ -119,29 +119,6 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
-/*h1 {
-    	height: 10em;
-   		position: relative;
-		max-width: 100%;
-		margin: 0;
-   	    position: absolute;
-		top:0%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-		height: 10px;
-		
-	   }
-   	   						
-form{
-	padding:0;
-	margin:0;
-	position:relative;
-	top:-120px;
-	right:15%;
-	float:right;
-}*/
-
 label.subClass {
 	color:white;
 	font-size: 24;
@@ -441,6 +418,68 @@ padding-bottom:1em;
 	text-align: left;
 	width:70%;
 }
+
+.infoholder {
+	position:relative;
+    clear: both;
+    margin: 0 auto;
+	overflow:hidden;
+    background-color: yellow;
+    bottom: 0;
+    padding: 0;
+    text-align: center;
+    width: 80%;
+    height: 70px;
+    }
+
+	.infoholder img.timeicon {
+	clear:both;
+	margin: 0 auto;
+	height:70%;
+    }
+
+div.weather_widget {
+	display:inline-block;
+	width:5%;
+	height:70%;
+	margin: 0;
+	padding: 0;
+	border:0;
+	float:left;
+}
+
+div.weather_widget img {
+	margin: 0;
+	padding: 0;
+	border:0;
+	left:20%;
+	width:100%;
+	height:100%;
+}
+
+div#time {
+	top:0;
+	text-align: center;
+	margin: 0 auto;
+	width:30%;
+	height:150px;
+	
+}
+
+div.museumicon {
+	top:0;
+	width:30%;
+	height:150px;
+	float:right;
+}
+
+div.museumicon img {
+	margin: 0;
+	padding: 0;
+	border:0;
+	width:20%;
+	height:20%;
+}
 }
 /* mobile ready 576 px end */
 
@@ -469,13 +508,5 @@ li form {
 
 #menu{
 	display: block;
-}
-
-div.weather_widget {
-
-	margin-right:20%;
-	width:130px;
-	height:150px;
-	float:right;
 }
 }
