@@ -5,15 +5,12 @@ html, body {
 	padding:0 !important;
 	width:100% !important;
  height: 100% !important;
-
-
 }
 
-.subimage {
+.subimage img{
 	position:relative;
-	max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+	width:100%;
+	height:100%;
 }
 
 .fact1{
@@ -22,8 +19,13 @@ html, body {
 	max-height:5%;
 	margin-top:-25%;
 	height: auto;
-    width: auto\9; /* ie8 */
+  width: auto;
 	left:10%;
+}
+
+.fact1 img{
+width:80%;
+height:80%;
 }
 
 .fact2{
@@ -32,8 +34,13 @@ html, body {
 	max-height:5%;
 	margin-top:5%;
 	height: auto;
-    width: auto\9; /* ie8 */
+  width: auto;
 	left:25%;
+}
+
+.fact2 img{
+width:80%;
+height:80%;
 }
 
 .fact3{
@@ -42,8 +49,13 @@ html, body {
 	max-height:5%;
 	margin-top:-5%;
 	height: auto;
-    width: auto\9; /* ie8 */
+    width: auto;
 	left:50%;
+}
+
+.fact3 img{
+width:80%;
+height:80%;
 }
 
 .fact4{
@@ -52,8 +64,13 @@ html, body {
 	max-height:5%;
 	margin-top:-10%;
 	height: auto;
-    width: auto\9; /* ie8 */
+    width: auto;
 	left:35%;
+}
+
+.fact4 img{
+width:80%;
+height:80%;
 }
 
 .fact5{
@@ -63,11 +80,32 @@ html, body {
 	max-height:5%;
 	margin-top:-5%;
 	height: auto;
-    width: auto\9; /* ie8 */
+    width: auto;
 	right:12%;
 }
 
+.fact5 img{
+width:80%;
+height:80%;
+}
+
+img.subgif {
+	width:120px;
+	height:120px;
+}
+
+video.subvid{
+	width:160px;
+	height:160px;
+}
+
+img.nucleargif {
+	width:200px;
+	height:120px;
+}
+
 .fact1 p {
+	
   display: none;
   color: #000000;
 }
@@ -75,9 +113,7 @@ html, body {
 .fact1:hover p {
 	
 	position:absolute;
-  background-color:rgb(0,83,98);
   display: inline-block;
-
 }
 
 .fact2 p {
@@ -86,7 +122,6 @@ html, body {
 }
 .fact2:hover p {
 	position:absolute;
-  background-color:rgb(0,83,98);
   display: inline-block;
 }
 
