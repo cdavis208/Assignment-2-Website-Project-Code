@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- HTML5 validated https://validator.w3.org 7/3/2017 !-->
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,26 +11,9 @@
 	<body onload="myFunction()">
 
 <header> 
-<!--	
-<nav>
-	
-<ul class="nav">
-		<div class="navleft">
-  <li><a href="compendium.html">Submarine Compendium</a></li>
-  <li><a href="about.html">About The Compendium</a></li>
-	</div>
-	<div class="navright">
-  <li><a href="howitworks.html">How A Submarine Works</a></li>
-  <li><a href="museum.html">Submarine Mueseum</a></li>
-  
-	</div>
-</ul>
-
-
-!-->
 
 <div>
-  <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium" align="middle" /></a>
+  <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium"/></a>
 
  </div>
 
@@ -48,24 +32,15 @@
 		</li>
 		<li><a href="museum.html">Submarine Mueseum</a></li>
 		
-		<li><form action="">
+		<li><form action="submit">
   <input type="text" placeholder="Search Compendium" name="search" id="search"><br>
   
   <input type="submit"  value="Submit">
 </form></li>
 	</ul>
- 
-
-
 </nav>
+  </header> 
 
-
-  </header>
-
-
-    
-  </head>
-  <body>
     <h3>Roayl Navy Submarine Museum</h3>
     <div id="map"></div>
     <script>
@@ -86,16 +61,17 @@
     </script>
 
 <section class="infoholder">
+  <h2> Local Data About Museum </h2>
   <div class="museumicon">
-      <a href="http://www.historicdockyard.co.uk/site-attractions/off-site-attractions/hms-alliance"> <img src="resources/images/museumIcons/royalnavyicon.png"> </img> </a>
+      <a href="http://www.historicdockyard.co.uk/site-attractions/off-site-attractions/hms-alliance"> <img src="resources/images/museumIcons/royalnavyicon.png" alt="royalnavy"/> </a>
       </div>
 <div class="weather_widget" >
-  <img src="resources/images/museumIcons/weathericon.png"></img>
+  <img src="resources/images/museumIcons/weathericon.png" alt="localweather"/>
 <label id="weatherinfo"> </label> 
 
   </div>
 
-<img src="resources/images/museumIcons/clockicon.png" class="timeicon"></img>
+<img src="resources/images/museumIcons/clockicon.png" class="timeicon" alt="localtime"/>
   <div id="time">
     </div>
 
