@@ -69,6 +69,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
 .slider-change {
@@ -76,6 +77,7 @@
     height: 9%;
     width: 9%;
     border-radius: 5px;
+    
 }
 
 .slider-change img {
