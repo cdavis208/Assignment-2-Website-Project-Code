@@ -370,9 +370,8 @@ div.museumicon img {
 
 
 /* mobile ready 576 px */
-@media (min-width: 580px){
+@media (min-width: 576px){
 
-	
 	section.wepinfo{
 	font-size: 16px;
 	
