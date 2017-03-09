@@ -16,7 +16,7 @@ function myFunction(){
   };
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
-
+alert("Please make sure you have unsafe scripts enabled through your browser (usually a little padlock symbol in the browser bar to the left or right). The third party json api data will not load otherwise and won't show the weather in the bar below.")
   
 
   function gatherData(arr) {

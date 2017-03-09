@@ -106,6 +106,16 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
+nav li .dmulogo {
+	position:relative;
+	top:10%;
+	width:20%;
+	height:60%;
+	margin:0 auto;
+	padding:0;
+	text-align: center;
+}
+
 label.subClass {
 	color:white;
 	font-size: 20px;
@@ -376,6 +386,7 @@ position: fixed;
 /* mobile ready 576 px */
 @media (min-width: 576px){
 
+
 	header div a img{
 	width:50%;
 	height: 80%;
@@ -631,6 +642,16 @@ nav #menu li{
 	width: 20%;
 	float: left;
 	
+}
+
+nav li .dmulogo {
+	position:relative;
+	top:10%;
+	width:40%;
+	height:60%;
+	margin:0 auto;
+	padding:0;
+	text-align: center;
 }
 
 li form {
