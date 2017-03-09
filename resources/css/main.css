@@ -118,21 +118,21 @@ label.subClass {
 }
 	section.wepinfo{
 	position:relative;
-	font-size: 16px;
+	font-size: 13px;
 	color: white;
 	padding-bottom:1em;
 	border-bottom: solid;
 }
 section.operationinfo{
 	position:relative;
-	font-size: 16px;
+	font-size: 13px;
 	color: white;
 	padding-bottom:1em;
 	border-bottom: solid;
 }
 section.subinfo{
 	position:relative;
-	font-size: 16px;
+	font-size: 13px;
 	color: white;
 	margin-bottom:20%;
 	border-bottom: solid;
@@ -140,7 +140,7 @@ section.subinfo{
 }
 section.engineinfo{
 	position:relative;
-	font-size: 16px;
+	font-size: 13px;
 	color: white;
 	padding-bottom:1em;
 	border-bottom: solid;
@@ -364,7 +364,6 @@ position: fixed;
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
     background-size: cover;
 	
 }
@@ -611,7 +610,7 @@ div.museumicon img {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
+   
     background-size: cover;
 }
 
