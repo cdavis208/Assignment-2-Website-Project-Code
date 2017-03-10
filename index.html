@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <!-- HTML5 validated https://validator.w3.org 8/3/2017 !-->
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Submarine Compendium Index</title>
-		<link rel="stylesheet" href="resources/css/home.css">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submarine Compendium Index</title>
+    <link rel="stylesheet" href="resources/css/home.css">
     <link rel="icon" href="resources/images/favicon.png">
-	</head>
+</head>
+
 <body>
-<header> 
-	<div class=containerlogo>
-  <p><img src="resources/images/logo.png" alt="Subarmine Compendium" class="indexlogo"/></p>
- </div>
-  </header>	
+    <header>
+        <!-- 
+	Header section of the website, this contains a logo of the compendium rather than the
+actual navigation, I wanted to make a unique menu for the index to test out some new skills
+I have learnt in the labs. This logo is responsive thanks to CSS3.
+!-->
+        <div class=containerlogo>
+            <p><img src="resources/images/logo.png" alt="Subarmine Compendium" class="indexlogo" />
+            </p>
+        </div>
+    </header>
 
+    <!-- 
+	This is the main menu for the index page, this design was from no real inspiration just
+a thought of mine that I had when I first started and thought it would be pretty unique to try
+and attempt. SVG's are really useful due to their ability to resize and reshape because of vectors
+rather than absolute pixels. I have four bars going diagonal across the screen filled with icons from
+each web page. When the use highlights over one of the responsive svg's it is animated with css3 to show
+a colour. When the user clicks the icon rather than the bar, they are then taken to the corresponding webpage.
+When the use shrinks the screen/mobile, the bars becomes horizontal making the menu more user friendly on smaller
+devices. Same method applies on mobile, clicking the icons rather than the bars.
+!-->
+    <div class=menuitem1svg>
+        <svg width="60%" height="3000px">
+            <rect width="60%" height="100%" />
+        </svg>
+        <p>
+            <a href="compendium.html"><img src="resources/images/catelogue.png" alt="Subarmine Catelogue" />
+            </a> Submarine Catalogue</p>
+    </div>
 
-<div class=menuitem1svg>
-	<svg width="60%" height="3000px">
-  <rect width="60%" height="100%"   />
-</svg>
-<p><a href="compendium.html"><img src="resources/images/catelogue.png" alt="Subarmine Catelogue" /></a> Submarine Catalogue</p>
-</div>
+    <div class=menuitem2svg>
+        <svg width="60%" height="3000px">
+            <rect width="60%" height="100%" />
+        </svg>
+        <p>
+            <a href="about.html"><img src="resources/images/about.png" alt="About" />
+            </a> About the compendium</p>
+    </div>
 
-<div class=menuitem2svg>
-	<svg width="60%" height="3000px">
-  <rect width="60%" height="100%"   />
-</svg>
-<p><a href="about.html"><img src="resources/images/about.png" alt="About" /></a> About the compendium</p>
-</div>
+    <div class=menuitem3svg>
+        <svg width="60%" height="3000px">
+            <rect width="60%" height="100%" />
+        </svg>
+        <p>
+            <a href="howitworks.html"><img src="resources/images/insidesub.png" alt="Inside the submarine" />
+            </a>How a submarine works</p>
+    </div>
 
-<div class=menuitem3svg>
-	<svg width="60%" height="3000px">
-  <rect width="60%" height="100%"   />
-</svg>
-<p><a href="howitworks.html"><img src="resources/images/insidesub.png" alt="Inside the submarine"/></a>How a submarine works</p>
-</div>
+    <div class=menuitem4svg>
+        <svg width="60%" height="3000px">
+            <rect width="60%" height="100%" />
+        </svg>
+        <p>
+            <a href="museum.html"><img src="resources/images/museum.png" alt="Subarmine Museums" />
+            </a> Museums</p>
+    </div>
 
-<div class=menuitem4svg>
-	<svg width="60%" height="3000px">
-  <rect width="60%" height="100%"   />
-</svg>
-<p><a href="museum.html"><img src="resources/images/museum.png" alt="Subarmine Museums"/></a> Museums</p>
-</div>
+    <!-- 
+	CSS validation for website.
+!-->
 
+    <footer>
 
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
 
-		<footer>
-			
-				<p>
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-    </a>
-</p>		
-		</footer>
+</body>
 
-	</body>
-</html>	
+</html>
