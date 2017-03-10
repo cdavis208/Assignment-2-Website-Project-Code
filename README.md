@@ -12,8 +12,8 @@ The testing document contains a change log and a series of tests gathered from 2
   
 Index.html
   
-    This page makes use of two technologies, HTML5 and CSS3. CSS3 animations provide the hovering effects of the SVG's whereas the HTML5 was used to draw the SVG's. CSS3 is also being used to make this page mobile ready. When using this page, click the icons instead of the bars and the href is attatched to the icons rather than the bars. When the page becomes less than 576px (mobile first) then the bars will switch positions becomes horizontal to the user, thus being more mobile friendly and easier to navigate.
-    
+  This page makes use of two technologies, HTML5 and CSS3. CSS3 animations provide the hovering effects of the SVG's whereas the HTML5 was used to draw the SVG's. CSS3 is also being used to make this page mobile ready. When using this page, click the icons instead of the bars and the href is attatched to the icons rather than the bars. When the page becomes less than 576px (mobile first) then the bars will switch positions becomes horizontal to the user, thus being more mobile friendly and easier to navigate.
+  
 compendium.html
 
   This page serves as the catelogue of submarines. This webpage makes use of HTML5, CSS3, and Javascript. When using this webpage, click a flag icon to load that countries submarine, a transition will load the submarine onto the screen using CSS3 animations. 4 Sections are then updates inside this image, this is done through the means of javascript and setting the innerHTML of the section to feed back important information about the submarines. Please read the test documents provided to show changes to this webpage and suggestions made for the submarine compendium. I chose to leave the change out stated in the document for this webpage due to overcluttering of the user interface.
