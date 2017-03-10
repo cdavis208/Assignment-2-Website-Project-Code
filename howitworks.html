@@ -1,102 +1,139 @@
 <!DOCTYPE html>
 <!-- HTML5 validated https://validator.w3.org 7/3/2017 !-->
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>How A Submarine Works</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="resources/css/main.css">
-		<link rel="stylesheet" href="resources/css/howItWorks.css">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>How A Submarine Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/howItWorks.css">
     <link rel="icon" href="resources/images/favicon.png">
-	</head>
+</head>
+
 <body>
-<header> 
+<!-- 
+	Header section of the website, here is the main navigation to the Compendium
+	using HTML5 syntactically correct tags. A li of item was created placed
+	inline to create an ordered menu set. This menu uses CSS3 anmations and
+	is mobile ready. Please refer to the main.css for this navigation bar and
+	its mobile readiness 
+!-->
+    <header>
 
-<div>
-  <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium" /></a>
+        <div>
+            <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium" />
+            </a>
 
- </div>
+        </div>
 
-<nav>
-<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button">
-		<ul id="menu">
-		<li><a href="compendium.html">Submarine Compendium</a></li>
-		<li>
-			<a href="about.html">About The Compendium</a>
-			
-		</li>
-		<li>
-			<a href="howitworks.html">How A Submarine Works</a>
-			
-		</li>
-		<li><a href="museum.html">Submarine Mueseum</a></li>
-		
-		<li><a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo"></a></li>
-	</ul>
- 
+        <nav>
+            <label for="show-menu" class="show-menu">Show Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="compendium.html">Submarine Compendium</a>
+                </li>
+                <li>
+                    <a href="about.html">About The Compendium</a>
+
+                </li>
+                <li>
+                    <a href="howitworks.html">How A Submarine Works</a>
+
+                </li>
+                <li><a href="museum.html">Submarine Mueseum</a>
+                </li>
+
+                <li>
+                    <a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+<!-- 
+	An image of a submarine is placed below the header taking the width and height of the screen. This image
+is layered with fact icons where the user can hover over it. CSS3 makes animations appear next to the fact icons.
+Video tags were used here to make used of advanced HTML semantics, I used controls such as mute, loop, and autoplay
+to make the experience for users more pleasing as picked up from the test logs.
+!-->
+
+    <div class="subimage">
+        <img src="resources/images/howItWorksIcons/howItWorksPicture.jpg" alt="howitworks" />
+    </div>
 
 
-</nav>
+    <div class="fact1">
+        <img src="resources/images/howItWorksIcons/factone.png" alt="fact one" />
+        <p><img src="resources/images/howItWorksIcons/giphy.gif" class="subgif" alt="fact one" /> </p>
 
+    </div>
 
-  </header>
-  
-			<div class="subimage"> 
-				<img src="resources/images/howItWorksIcons/howItWorksPicture.jpg" alt="howitworks"/>
-				</div>
+    <div class="fact2">
+        <img src="resources/images/howItWorksIcons/facttwo.png" alt="fact two" />
 
-	
-						<div class="fact1">	
-					<img src="resources/images/howItWorksIcons/factone.png" alt="fact one"/> 
-					<p><img src="resources/images/howItWorksIcons/giphy.gif" class="subgif" alt="fact one"/> </p>
-					
-					</div>
+        <p>
+            <video autoplay loop muted src="resources/videos/demosub.mp4" class="subvid">
+                Your browser does not support the video tag.
+            </video>
+        </p>
 
-						<div class="fact2">
-					<img src="resources/images/howItWorksIcons/facttwo.png" alt="fact two"/> 
-						
-					<p> <video autoplay loop muted src="resources/videos/demosub.mp4" class="subvid">
-Your browser does not support the video tag.
-</video></p>
-					
-					</div>
+    </div>
 
-						<div class="fact3">
-					<img src="resources/images/howItWorksIcons/factthree.png" alt="fact three" /> 
-						
-					<p> <img src="resources/images/howItWorksIcons/cmdroom.gif" class="nucleargif" alt="command centre"/> </p>
-					
-					</div>
+    <div class="fact3">
+        <img src="resources/images/howItWorksIcons/factthree.png" alt="fact three" />
 
-						<div class="fact4">
-					<img src="resources/images/howItWorksIcons/factfour.png" alt="fact four"/> 
-						
-				<p> <img src="resources/images/howItWorksIcons/nuclearengine.gif" class="nucleargif" alt="nuclear engine gif"/> </p>
-					
-					</div>
+        <p> <img src="resources/images/howItWorksIcons/cmdroom.gif" class="nucleargif" alt="command centre" /> </p>
 
-						<div class="fact5">
-					<img src="resources/images/howItWorksIcons/factfive.png" alt="fact five"/> 
-					
-					<p> <img src="resources/images/howItWorksIcons/torpfire.gif" class="nucleargif" alt="torpedo fire"/> </p>
-					
-					</div>
-					
-					
+    </div>
 
-<div id="wrapper">
-    
-<div class="flexbox1"><p>Fact One: For a submarine to submerge, a submarine must make use of its ballast tanks. A ballast tank is a container which can be filled with water, this tank sits between the submarines inner and outer walls. The ballast tanks are flooded changing the state of buoyancy, increasing the amount of water in the ballast tanks causes the submarine to submerge. Releasing the tanks causes the submarine to surface. Hover over icon one to see how this works.</p> </div>
+    <div class="fact4">
+        <img src="resources/images/howItWorksIcons/factfour.png" alt="fact four" />
 
-<div class="flexbox2"><p>Fact Two: Modern day subarmines make use of sea-to-air missles to disable land, sea, and air targets. Throughout the 1960's and 1970's the U.S government put forward a grant to improve the navigation of these weapon systems. In the 1980's sophisticated targeting systems were produced allowing for terrain navigation as well as static-geometric rotation. Sensors detect the materials of an enemy vessel, hover over icon two to see how this works.</p> </div>
+        <p> <img src="resources/images/howItWorksIcons/nuclearengine.gif" class="nucleargif" alt="nuclear engine gif" /> </p>
 
- <div class="flexbox3"><p>Fact Three: Interwoven communication systems give a submarine the ability to navigate both submerged and surfaced. Sonar, the most well known and common form of navigation/detection is an integral part of any communication system. Sonar works ping sending a sound vibration off, if that vibration hits an object then it is returned back to the submarine and is displayed on the monitor. Hover over icon three to see how this works.</p> </div>
+    </div>
 
-  <div class="flexbox4"><p>Fact Four: Nuclear submarines are power and propelled by power of nuclear reactors. In short, a reactor heats water, this steam is then applied to turn the turbines, once used the water is then cooled and re-used again. Nuclear reactors are able to power submarines submerged for the whole time on duty without ever having to surface, and rarely have to be replaced for the submarines lifetime. Hover over icon four to see how this works. </p> </div>
+    <div class="fact5">
+        <img src="resources/images/howItWorksIcons/factfive.png" alt="fact five" />
 
-   <div class="flexbox5"><p>Fact Five: Torpedoes have been part of a naval vessels aresenal since the late 1860's, however, much of their resemblance then is completely different to now. Submarines today make use of similar technologies used by the sea-air-missles, where the navigation of a torpedo can be controlled remotely and staticly change direction on the spot be draw by material composition signals. Hover over icon five to see how this works.</p> </div> 
-  </div>
-  
-	</body>
-</html>	
+        <p> <img src="resources/images/howItWorksIcons/torpfire.gif" class="nucleargif" alt="torpedo fire" /> </p>
+
+    </div>
+
+<!-- 
+	Here I make use of an advanced CSS3 component with HTML5 called flexbox. Flexbox is a new layout structure
+to component, making rows and column far more accessible and easier to use. I have five flex boxes for the five
+facts relative to the icons above. Each fact tells a bit about each animation informing the user to hover over the
+fact icon. I have changed the colour of this text as white was too light to see sometimes.
+!-->
+
+    <div id="wrapper">
+
+        <div class="flexbox1">
+            <p>Fact One: For a submarine to submerge, a submarine must make use of its ballast tanks. A ballast tank is a container which can be filled with water, this tank sits between the submarines inner and outer walls. The ballast tanks are flooded changing the state of buoyancy, increasing the amount of water in the ballast tanks causes the submarine to submerge. Releasing the tanks causes the submarine to surface. Hover over icon one to see how this works.</p>
+        </div>
+
+        <div class="flexbox2">
+            <p>Fact Two: Modern day subarmines make use of sea-to-air missles to disable land, sea, and air targets. Throughout the 1960's and 1970's the U.S government put forward a grant to improve the navigation of these weapon systems. In the 1980's sophisticated targeting systems were produced allowing for terrain navigation as well as static-geometric rotation. Sensors detect the materials of an enemy vessel, hover over icon two to see how this works.</p>
+        </div>
+
+        <div class="flexbox3">
+            <p>Fact Three: Interwoven communication systems give a submarine the ability to navigate both submerged and surfaced. Sonar, the most well known and common form of navigation/detection is an integral part of any communication system. Sonar works ping sending a sound vibration off, if that vibration hits an object then it is returned back to the submarine and is displayed on the monitor. Hover over icon three to see how this works.</p>
+        </div>
+
+        <div class="flexbox4">
+            <p>Fact Four: Nuclear submarines are power and propelled by power of nuclear reactors. In short, a reactor heats water, this steam is then applied to turn the turbines, once used the water is then cooled and re-used again. Nuclear reactors are able to power submarines submerged for the whole time on duty without ever having to surface, and rarely have to be replaced for the submarines lifetime. Hover over icon four to see how this works. </p>
+        </div>
+
+        <div class="flexbox5">
+            <p>Fact Five: Torpedoes have been part of a naval vessels aresenal since the late 1860's, however, much of their resemblance then is completely different to now. Submarines today make use of similar technologies used by the sea-air-missles, where the navigation of a torpedo can be controlled remotely and staticly change direction on the spot be draw by material composition signals. Hover over icon five to see how this works.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
