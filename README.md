@@ -1,6 +1,7 @@
 # p14136400
 
 Introduction
+!! Please use chrome, firefox, or safari !!
 
   Most of the information given about motivations and technologies used can be found in the about page. This readme serves more as a how-to guide and a general overview of everything that has been done. The website is broken up into 5 web pages: index, catelogue, about, howItWorks, and museum. Each page is designed to give the user more insight into the world of submarines as a one-stop guide. More information about my motivations can be found in the 'about the compendium' page. Please note all CSS files are built with mobile ready capability for both 576px and 760px reflecting key sizes for both mobile and desktop. Credit to media loot for inspiration of the menu.
   
