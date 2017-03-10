@@ -22,7 +22,7 @@ function myFunction() {
     xmlhttp.send();
 
     //warning user to enable unsafe scripts to see the weather widget temperature parsed data from openweatherAPi.
-    alert("Please make sure you have unsafe scripts enabled through your browser (usually a little padlock symbol in the browser bar to the left or right). The third party json api data will not load otherwise and won't show the weather in the bar below.")
+    alert("Please make sure you have unsafe scripts enabled through your browser (usually a little padlock ! OR ! shield symbol in the browser bar to the left or right). The third party json api data will not load otherwise and won't show the weather in the bar below.")
 
 
     function gatherData(arr) {
