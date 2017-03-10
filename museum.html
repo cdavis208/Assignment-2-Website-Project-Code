@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <!-- HTML5 validated https://validator.w3.org 7/3/2017 !-->
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Royal Navy Submarine Museum</title>
-		<link rel="stylesheet" href="resources/css/main.css">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Royal Navy Submarine Museum</title>
+    <link rel="stylesheet" href="resources/css/main.css">
     <link rel="icon" href="resources/images/favicon.png">
-	</head>
-	
-	<body onload="myFunction()">
+</head>
+<!-- 
+	This function is used to fet and update the local time of the subarmine museum in portsmouth and
+fetch the 3rd party JSON api data from openweatherAPI. Further details are enclosed in my weatherapp.js
+file for how these functions work.
+!-->
 
-<header> 
+<body onload="myFunction()">
+    <!-- 
+	Header section of the website, here is the main navigation to the Compendium
+	using HTML5 syntactically correct tags. A li of item was created placed
+	inline to create an ordered menu set. This menu uses CSS3 anmations and
+	is mobile ready. Please refer to the main.css for this navigation bar and
+	its mobile readiness 
+!-->
+    <header>
 
-<div>
-  <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium"/></a>
+        <div>
+            <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium" />
+            </a>
 
- </div>
+        </div>
 
-<nav>
-<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button">
-		<ul id="menu">
-		<li><a href="compendium.html">Submarine Compendium</a></li>
-		<li>
-			<a href="about.html">About The Compendium</a>
-			
-		</li>
-		<li>
-			<a href="howitworks.html">How A Submarine Works</a>
-			
-		</li>
-		<li><a href="museum.html">Submarine Mueseum</a></li>
-		
-	<li><a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo"></a></li>
-	</ul>
-</nav>
-  </header> 
+        <nav>
+            <label for="show-menu" class="show-menu">Show Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="compendium.html">Submarine Compendium</a>
+                </li>
+                <li>
+                    <a href="about.html">About The Compendium</a>
 
-    <h3>Roayl Navy Submarine Museum</h3>
+                </li>
+                <li>
+                    <a href="howitworks.html">How A Submarine Works</a>
+
+                </li>
+                <li><a href="museum.html">Submarine Mueseum</a>
+                </li>
+
+                <li>
+                    <a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 
+	This section of the website contains a header for the submarine museum, a google map api showing portsmouth
+and where the royal navy submarine museum is, aswell as a custom widget bar I made. This widget bar makes use of
+3rd party JSON api data called opeanweatherAPI. I send a request to find the local weather of portsmouth and feed
+this back to the user next to the cloud. You must enable unsafe scripts to see this feed as the request is made over
+http and not https. Do load unsafe scripts, click the shield or padlock symbol in your seach bar at the top, and then
+enable unsafe scripts. This pulls in the weather set to every hour.
+!-->
+    <h3>Royal Navy Submarine Museum</h3>
     <div id="map"></div>
     <script>
-      function initMap() {
-        var Portsmouth = {lat: 50.7882888, lng: -1.1193841};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: Portsmouth
-        });
-        var marker = new google.maps.Marker({
-          position: Portsmouth,
-          map: map
-        });
-      }
+        function initMap() {
+            var Portsmouth = {
+                lat: 50.7882888,
+                lng: -1.1193841
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: Portsmouth
+            });
+            var marker = new google.maps.Marker({
+                position: Portsmouth,
+                map: map
+            });
+        }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmTn2SzDyKCeKVtRItfLvaZa_5a2DGy80&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmTn2SzDyKCeKVtRItfLvaZa_5a2DGy80&callback=initMap">
     </script>
 
-<section class="infoholder">
-  
-  <div class="museumicon">
-      <a href="http://www.historicdockyard.co.uk/site-attractions/off-site-attractions/hms-alliance"> <img src="resources/images/museumIcons/royalnavyicon.png" alt="royalnavy"/> </a>
-      </div>
-<div class="weather_widget" >
-  <img src="resources/images/museumIcons/weathericon.png" alt="localweather"/>
-<label id="weatherinfo"> </label> 
+    <section class="infoholder">
 
-  </div>
+        <div class="museumicon">
+            <a href="http://www.historicdockyard.co.uk/site-attractions/off-site-attractions/hms-alliance"> <img src="resources/images/museumIcons/royalnavyicon.png" alt="royalnavy" /> </a>
+        </div>
+        <div class="weather_widget">
+            <img src="resources/images/museumIcons/weathericon.png" alt="localweather" />
+            <label id="weatherinfo"> </label>
 
-<img src="resources/images/museumIcons/clockicon.png" class="timeicon" alt="localtime"/>
-  <div id="time">
-    </div>
+        </div>
 
-</section>
-<script type="text/javascript" src="resources/javascript/weatherapp.js"></script>
-	</body>
-</html>	
+        <img src="resources/images/museumIcons/clockicon.png" class="timeicon" alt="localtime" />
+        <div id="time">
+        </div>
+
+    </section>
+    <script type="text/javascript" src="resources/javascript/weatherapp.js"></script>
+</body>
+
+</html>
