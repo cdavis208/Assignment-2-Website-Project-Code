@@ -12,45 +12,69 @@
 </head>
 
 <body>
+    <!-- 
+	Header section of the website, here is the main navigation to the Compendium
+	using HTML5 syntactically correct tags. A li of item was created placed
+	inline to create an ordered menu set. This menu uses CSS3 anmations and
+	is mobile ready. Please refer to the main.css for this navigation bar and
+	its mobile readiness 
+!-->
 
- <header> 
+    <header>
 
-<div>
-  <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium"/></a>
+        <div>
+            <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium" />
+            </a>
 
- </div>
+        </div>
 
-<nav>
-<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button">
-		<ul id="menu">
-		<li><a href="compendium.html">Submarine Compendium</a></li>
-		<li>
-			<a href="about.html">About The Compendium</a>
-			
-		</li>
-		<li>
-			<a href="howitworks.html">How A Submarine Works</a>
-			
-		</li>
-		<li><a href="museum.html">Submarine Mueseum</a></li>
-		
-		<li><a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo"></a></li>
-	</ul>
- 
+        <nav>
+            <label for="show-menu" class="show-menu">Show Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="compendium.html">Submarine Compendium</a>
+                </li>
+                <li>
+                    <a href="about.html">About The Compendium</a>
 
+                </li>
+                <li>
+                    <a href="howitworks.html">How A Submarine Works</a>
 
-</nav>
+                </li>
+                <li><a href="museum.html">Submarine Mueseum</a>
+                </li>
 
-
-  </header>
-
-    <img src="resources/images/catalogue/seagif.gif" id="backgroundmobile"/>
-
-    
+                <li>
+                    <a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo">
+                    </a>
+                </li>
+            </ul>
 
 
 
+        </nav>
+
+
+    </header>
+    <!-- 
+	Here I fixed the previous issue of an MP4 video eating too much ram on many
+machines tested as explained inside the testing documents found in the repository.
+The video tag was used elsewhere inside the howItWorks page to demonstrate the usage
+of that advanced HTML5 tag.
+!-->
+    <img src="resources/images/catalogue/seagif.gif" id="backgroundmobile" />
+
+
+
+
+    <!-- 
+	Here is my solution for the slider holder. I attempted this without javascript
+as I wanted to keep the javascript for the more advanced stuff. A holder contains multiple
+images layered on top of each other. When the user clicks a flag, a transition coming from
+the left looks like the image is being switch out, then the javascript is updating the sections
+and labels to give th user the correct information about the submarine.
+!-->
     <div class="slider-holder">
         <label class="subClass" id="subClass"></label>
         <span id="slider-image-1"></span>
@@ -65,44 +89,55 @@
 
         <div class="image-holder">
             <img src="resources/images/catalogue/submarine1.jpg" class="slider-image img1" alt="brit" />
-            <img src="resources/images/catalogue/submarine2.jpg" class="slider-image img2" alt="ger"/>
-            <img src="resources/images/catalogue/submarine3.jpg" class="slider-image img3" alt="fr"/>
-            <img src="resources/images/catalogue/submarine4.jpg" class="slider-image img4" alt="amr"/>
-            <img src="resources/images/catalogue/submarine5.jpg" class="slider-image img5" alt="jap"/>
-            <img src="resources/images/catalogue/submarine6.jpg" class="slider-image img6" alt="spain"/>
-            <img src="resources/images/catalogue/submarine7.jpg" class="slider-image img7" alt="china"/>
-            <img src="resources/images/catalogue/submarine8.jpg" class="slider-image img8" alt="rus"/>
-            <img src="resources/images/catalogue/submarine9.jpg" class="slider-image img9" alt="nk"/>
-            
+            <img src="resources/images/catalogue/submarine2.jpg" class="slider-image img2" alt="ger" />
+            <img src="resources/images/catalogue/submarine3.jpg" class="slider-image img3" alt="fr" />
+            <img src="resources/images/catalogue/submarine4.jpg" class="slider-image img4" alt="amr" />
+            <img src="resources/images/catalogue/submarine5.jpg" class="slider-image img5" alt="jap" />
+            <img src="resources/images/catalogue/submarine6.jpg" class="slider-image img6" alt="spain" />
+            <img src="resources/images/catalogue/submarine7.jpg" class="slider-image img7" alt="china" />
+            <img src="resources/images/catalogue/submarine8.jpg" class="slider-image img8" alt="rus" />
+            <img src="resources/images/catalogue/submarine9.jpg" class="slider-image img9" alt="nk" />
+            <!-- 
+	Individual sections are created for each information pack about the submarines. As a user
+clicks a new submarine flag, a timer is set for 2 seconds (this is the transition timer for the
+images to swap in an out). This was done so variables would be updated in the corrected order in 
+javascript and to create a smoother flow for the user as the images switch in and out.
+!-->
             <section class="wepinfo">
                 <h2>Weapon Information</h2>
-                <img src="resources/images/catalogue/weaponInfo.png" alt="wepinfo"/>
+                <img src="resources/images/catalogue/weaponInfo.png" alt="wepinfo" />
                 <br>
                 <label id="wepinfoclass"></label>
             </section>
 
             <section class="engineinfo">
-                 <h2>Engine Information</h2>
-                <img src="resources/images/catalogue/engineInfo.png" alt="engineinfo"/>
+                <h2>Engine Information</h2>
+                <img src="resources/images/catalogue/engineInfo.png" alt="engineinfo" />
                 <br>
                 <label id="engineinfoclass"></label>
             </section>
 
             <section class="operationinfo">
-                 <h2>Operation Information</h2>
-                <img src="resources/images/catalogue/operationInfo.png" alt="operationinfo"/>
+                <h2>Operation Information</h2>
+                <img src="resources/images/catalogue/operationInfo.png" alt="operationinfo" />
                 <br>
                 <label id="operationinfoclass"></label>
             </section>
 
             <section class="subinfo">
-                 <h2>General Information</h2>
-                <img src="resources/images/catalogue/aboutInfo.png" alt="aboutinfo"/>
+                <h2>General Information</h2>
+                <img src="resources/images/catalogue/aboutInfo.png" alt="aboutinfo" />
                 <br>
                 <label id="subinfoclass"></label>
             </section>
         </div>
     </div>
+
+    <!-- 
+	My solution for linking the images together was to create local href's of images and then
+link them to the spans as the button is clicked. I had previously solutions of using reels and fixed pixels
+but this is a more mobile ready solution that I developed.
+!-->
     <div class="button-holder" id="button-holder" onclick="setTimeout(myFunction,2000)">
         <a href="#slider-image-1" class="slider-change"> <img src="resources/images/catalogue/ukFlagIcon.png" alt="uk">
         </a>
