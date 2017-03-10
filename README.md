@@ -6,7 +6,7 @@ Introduction
   
 Wireframes, Testing, and Sitemap
 
-  This folder contains the wireframes development stages from earlier on in the project, a series of testing material which include user testing notes & a testing document, and a sitemap which shows the flow of the website. A video was also created but was too large for github so here is the dropbox link to the video of me conducting tests with a user and taking notes which can be found in the same testing folder:
+  This folder contains the wireframes development stages from earlier on in the project, a series of testing material which include user testing notes & a testing document, and a sitemap which shows the flow of the website. A video was also created but was too large for github so here is the dropbox link to the video of me conducting tests with a user and taking notes which can be found in the same testing folder: https://dl.dropboxusercontent.com/u/5289016/User%20Testing%20Footage.mp4
 
 The testing document contains a change log and a series of tests gathered from 20 users. 10 were recorded and shown in this document, these recorded tests were at the end of the project and are relevant to the final product you see today. Suggested changes and comments were taken onboard and the code was altered accordingly as explained in the testing document provided.
   
