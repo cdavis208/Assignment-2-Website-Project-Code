@@ -1,92 +1,117 @@
 <!DOCTYPE html>
 <!-- HTML5 validated https://validator.w3.org 6/3/2017 !-->
+
+
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>About The Compendium</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="resources/css/main.css">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>About The Compendium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/main.css">
     <link rel="icon" href="resources/images/favicon.png">
-	</head>
-	
-	<body onload="myFunction()">
+</head>
+<!--
+	This function is find in aboutPageLogic.js. This function pulls in JSON
+	data that I created and updates the relevant fields to show the information.
+	an XMLHTTP request is used to pull through the JSON data as an array, then
+	appends it to the combobox and updates the fields below it.
+!-->
 
-<header> 
+<body onload="myFunction()">
+    <!-- 
+	Header section of the website, here is the main navigation to the Compendium
+	using HTML5 syntactically correct tags. A li of item was created placed
+	inline to create an ordered menu set. This menu uses CSS3 anmations and
+	is mobile ready. Please refer to the main.css for this navigation bar and
+	its mobile readiness 
+!-->
 
-<div>
-  <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium"/></a>
+    <header>
 
- </div>
+        <div>
+            <a href="index.html"> <img src="resources/images/logo.png" alt="Subarmine Compendium" />
+            </a>
 
-<nav>
-<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button">
-		<ul id="menu">
-		<li><a href="compendium.html">Submarine Compendium</a></li>
-		<li>
-			<a href="about.html">About The Compendium</a>
-			
-		</li>
-		<li>
-			<a href="howitworks.html">How A Submarine Works</a>
-			
-		</li>
-		<li><a href="museum.html">Submarine Mueseum</a></li>
-		
-		<li><a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo"></a></li>
-	</ul>
- 
+        </div>
 
+        <nav>
+            <label for="show-menu" class="show-menu">Show Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="compendium.html">Submarine Compendium</a>
+                </li>
+                <li>
+                    <a href="about.html">About The Compendium</a>
 
-</nav>
+                </li>
+                <li>
+                    <a href="howitworks.html">How A Submarine Works</a>
 
+                </li>
+                <li><a href="museum.html">Submarine Mueseum</a>
+                </li>
 
-  </header>
-	
-		<!-- About -->
-					
-								
-<section class="mainBox">
-	<h1 class="aboutTitleFormat" ><span class="aboutTitleSpan" id ="aboutPageSub" >About</span></h1>
+                <li>
+                    <a href="http://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx"><img src="resources/images/dmulogo.png" class="dmulogo">
+                    </a>
+                </li>
+            </ul>
 
 
-	<select id="sel"  onchange="setTimeout(updateAboutTitles,100)"> </select>
 
-									
-									<section class="box1">
-											
-										<img id="box1img" src="resources/images/aboutPageIcons/jsonicon.jpg" alt="json">
-							
-										<p id="box1Txt">This web page makes use of JSON data to manipulate the DOM. A drop down box is populated with JSON data parsed as a XMLHTTP request. JSON data
-											is interesting because it can be kept in a form which is not local to the user thus creating securer web applications. I first used JSON data in one of the labs
-											and ever since, I've wanted to incorporate it in someway, so I tested it with comboboxes, allowing this webpage to be possible. Third party JSON API data is also
-											used inthe museum webpage to pull in weather data using the openweatherAPI. The data being pulled in is over HTTP so unsafe scripts must be loaded in browser. The
-											weather is shown for Portsmouth in the bottom widget bar I made.'
-										</p>
-							</section>
-							
-										
-							<section class="box2">
-								
-									<img id="box2img" src="resources/images/aboutPageIcons/dropdownmenu.gif" alt="dropdown"> 
-									
-										<p id="box2Txt"> A combobox can be found in the top left of this page. This drop down box makes use of the JSON data discussed in the previous section. You can select the choices: about this page, motivations for this website, 
-											technologies used, and about me. When selecting another option, the page will be dynamically updated using javascript and sub-categories headers from the JSON data. The combobox will always be defaulted to the first option of
-											the array of items. An event listener checks for onselect through the HTML5.
-										</p>
-							</section>		
-								
-								
-								
-								
-									<section class="box3">
-										
-										<img id="box3img" src="resources/images/aboutPageIcons/mobilefirsticon.png" alt="mobilefirst">
-								
-										<p id="box3Txt">This webpage and website makes use of @media queries designed to make the website mobile, tablet, and desktop friendly. Screen resolutions found commonly on all of these devices have been used. Responsive design for images and text sizes can be found also making using of percentages instead of absolute pixels. Relative screen positioning has been used to ensure screen resizing can hold elements the way they were designed to. This webpage in particular resizes the font and reorganizes the paragraphs to be more mobile friendly.</p>
-							</section>
-	</section>							
-		
-		<script type="text/javascript" src="resources/javascript/aboutPageLogic.js"></script>			<!-- /About -->
-	</body>
-</html>	
+        </nav>
+
+
+    </header>
+
+    <!-- About Start 
+		Here I make use of section tags and my javascript to dynamically update the section
+		boxes. I was going to originally use flexbox but decided to use that in the how it
+		works page instead. A manbox contains all of the sub boxes, these sub boxes hold all
+		of the relevant information that is further explained from the readme file. When the
+		user changed the selected item in the combobox, then it is dynamically updated through
+		the sections located here.
+		-->
+
+
+    <section class="mainBox">
+        <h1 class="aboutTitleFormat"><span class="aboutTitleSpan" id ="aboutPageSub" >About</span></h1>
+
+
+        <select id="sel" onchange="setTimeout(updateAboutTitles,100)"> </select>
+
+
+        <section class="box1">
+
+            <img id="box1img" src="resources/images/aboutPageIcons/jsonicon.jpg" alt="json">
+
+            <p id="box1Txt">This web page makes use of JSON data to manipulate the DOM. A drop down box is populated with JSON data parsed as a XMLHTTP request. JSON data is interesting because it can be kept in a form which is not local to the user thus creating securer web applications. I first used JSON data in one of the labs and ever since, I've wanted to incorporate it in someway, so I tested it with comboboxes, allowing this webpage to be possible. Third party JSON API data is also used inthe museum webpage to pull in weather data using the openweatherAPI. The data being pulled in is over HTTP so unsafe scripts must be loaded in browser. The weather is shown for Portsmouth in the bottom widget bar I made.'
+            </p>
+        </section>
+
+
+        <section class="box2">
+
+            <img id="box2img" src="resources/images/aboutPageIcons/dropdownmenu.gif" alt="dropdown">
+
+            <p id="box2Txt"> A combobox can be found in the top left of this page. This drop down box makes use of the JSON data discussed in the previous section. You can select the choices: about this page, motivations for this website, technologies used, and about me. When selecting another option, the page will be dynamically updated using javascript and sub-categories headers from the JSON data. The combobox will always be defaulted to the first option of the array of items. An event listener checks for onselect through the HTML5.
+            </p>
+        </section>
+
+
+
+
+        <section class="box3">
+
+            <img id="box3img" src="resources/images/aboutPageIcons/mobilefirsticon.png" alt="mobilefirst">
+
+            <p id="box3Txt">This webpage and website makes use of @media queries designed to make the website mobile, tablet, and desktop friendly. Screen resolutions found commonly on all of these devices have been used. Responsive design for images and text sizes can be found also making using of percentages instead of absolute pixels. Relative screen positioning has been used to ensure screen resizing can hold elements the way they were designed to. This webpage in particular resizes the font and reorganizes the paragraphs to be more mobile friendly.</p>
+        </section>
+    </section>
+
+    <script type="text/javascript" src="resources/javascript/aboutPageLogic.js"></script>
+    <!-- /About -->
+</body>
+
+</html>
