@@ -1,344 +1,305 @@
+/* 
+Validated 10/03/2017. WARNING, when usin the css validator, set the option to css3 + svg!!
+*/
+
 body {
-		margin:0;
-		padding:0;
-		font-family: Sans-Serif;
-		line-height: 1.5em;
-		background:white;
-		width:100%;
-		height:80%;
-     }
-
-
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+    line-height: 1.5em;
+    background: white;
+    width: 100%;
+    height: 80%;
+}
 header {
-		position:absolute;
-		top:0;
-		right: 0;
-        bottom: 0;
-  		left: 0;
-  		padding: 0.5rem;
-		background: white;
-		height: 120px;
-		border-bottom-style: solid;
-		border-color:black;
-		z-index: 100;
-	   }
-
-	   footer {
-		position:absolute;
-		right: 0;
-        bottom: 0;
-  		left: 0;
-  		padding: 1rem;
-		clear: left;
-		width: 100%;
-		background:white;
-		text-align: center;
-		padding: 4px 0;
-		border-top-style: solid;
-		border-color:black;
-	   }
-
-	   div.navcontainer {
-		height: 10em;
-   		position: relative;
-	   }
-div.containerlogo {
-    	height: 10em;
-   		position: relative;
-		max-width: 100%;
-   		height: auto;
-    	width: auto;
-		
-	   }
-
-div.containerlogo p {
-  	    margin: 0;
-   	    position: absolute;
-		top:0%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-		height: 10px;
-		
-	   }
-img {
-	 
-	height:20%;
-	width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    background: white;
+    height: 120px;
+    border-bottom-style: solid;
+    border-color: black;
+    z-index: 100;
 }
-
-img.indexlogo {
-	width:100%;
-	height: auto;
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    clear: left;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 4px 0;
+    border-top-style: solid;
+    border-color: black;
 }
-	   div.menuitem1svg {
-		position:fixed;
-		left:40%;
-		height:80%;
-		width:40%;
-    	transform: rotate(90deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0); 
-		transition: all .4s ease-in;
-		opacity: 0.3;
-	   } 
-
-div.menuitem1svg:hover {
-        fill: rgb(203,153,201);
-		opacity: 1.0;
-       } 
-
-div.menuitem1svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		font-size:0px;
-		right:32%;
-		top:28%;
-		fill: white;
-		transform:rotate(-90deg);
-}
-
-div.menuitem2svg {
-		position:fixed;
-		height:110%;
-		width:40%;
-		left:30%;
-    	transform: rotate(90deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0);  
-		transition: all .4s ease-in; 
-		opacity: 0.3;
-	   } 
-
-div.menuitem2svg:hover {
-        fill: rgb(201,201,255);
-		opacity: 1.0;
-       } 
-
-div.menuitem2svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		right:35%;
-		top:35%;
-		font-size:0px;
-		fill: white;
-		transform:rotate(-90deg);
-		
-}	   	    	    	   
-
-div.menuitem3svg {
-	position:fixed;
-		height:140%;
-		width:40%;
-		left:60%;
-    	transform: rotate(90deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0); 
-		transition: all .4s ease-in; 
-		opacity: 0.3; 
-		
-	   } 
-
-div.menuitem3svg:hover {
-        fill: rgb(119,158,203);
-		opacity: 1.0;
-       } 
-
-div.menuitem3svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		right:35%;
-		top:55%;
-		font-size:0px;
-		fill: white;
-		transform:rotate(-90deg);
-}	   	    	    
-
-div.menuitem4svg {
-	position:fixed;
-		height:170%;
-		width:40%;
-		left:92%;
-    	transform: rotate(90deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0);  
-		transition: all .4s ease-in; 
-		opacity: 0.3; 
-	   }
-
-div.menuitem4svg:hover {
-        fill: rgb(225,247,213);
-		opacity: 1.0;
-       }
-
-div.menuitem4svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		right:37%;
-		top:69%;
-		font-size:0px;
-		fill: white;
-		transform:rotate(-90deg);
-		
-}	     	   						
-
-/* mobile ready 576 px */
-@media (min-width: 576px){
-
-img {
-	  
-	height:20%;
-	width: 20%;
-}	   
-
 div.navcontainer {
-		height: 10em;
-   		position: relative;
+    height: 10em;
+    position: relative;
 }
-
 div.containerlogo {
-    	height: 10em;
-   		position: relative;
-		max-width: 100%;
-   		height: auto;
-    	width: auto;
-		
-	   }
-
+    height: 10em;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
 div.containerlogo p {
-  	    margin: 0;
-   	    position: absolute;
-		top:0%;
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 10px;
+}
+img {
+    height: 20%;
+    width: 20%;
+}
+img.indexlogo {
+    width: 100%;
+    height: auto;
+}
+div.menuitem1svg {
+    position: fixed;
+    left: 40%;
+    height: 80%;
+    width: 40%;
+    transform: rotate(90deg);
+    fill: white;
+    stroke-width: 10px;
+    stroke: rgb(0, 0, 0);
+    transition: all .4s ease-in;
+    opacity: 0.3;
+}
+div.menuitem1svg:hover {
+    fill: rgb(203, 153, 201);
+    opacity: 1.0;
+}
+div.menuitem1svg p {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    font-size: 0px;
+    right: 32%;
+    top: 28%;
+    fill: white;
+    transform: rotate(-90deg);
+}
+div.menuitem2svg {
+    position: fixed;
+    height: 110%;
+    width: 40%;
+    left: 30%;
+    transform: rotate(90deg);
+    fill: white;
+    stroke-width: 10px;
+    stroke: rgb(0, 0, 0);
+    transition: all .4s ease-in;
+    opacity: 0.3;
+}
+div.menuitem2svg:hover {
+    fill: rgb(201, 201, 255);
+    opacity: 1.0;
+}
+div.menuitem2svg p {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    right: 35%;
+    top: 35%;
+    font-size: 0px;
+    fill: white;
+    transform: rotate(-90deg);
+}
+div.menuitem3svg {
+    position: fixed;
+    height: 140%;
+    width: 40%;
+    left: 60%;
+    transform: rotate(90deg);
+    fill: white;
+    stroke-width: 10px;
+    stroke: rgb(0, 0, 0);
+    transition: all .4s ease-in;
+    opacity: 0.3;
+}
+div.menuitem3svg:hover {
+    fill: rgb(119, 158, 203);
+    opacity: 1.0;
+}
+div.menuitem3svg p {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    right: 35%;
+    top: 55%;
+    font-size: 0px;
+    fill: white;
+    transform: rotate(-90deg);
+}
+div.menuitem4svg {
+    position: fixed;
+    height: 170%;
+    width: 40%;
+    left: 92%;
+    transform: rotate(90deg);
+    fill: white;
+    stroke-width: 10px;
+    stroke: rgb(0, 0, 0);
+    transition: all .4s ease-in;
+    opacity: 0.3;
+}
+div.menuitem4svg:hover {
+    fill: rgb(225, 247, 213);
+    opacity: 1.0;
+}
+div.menuitem4svg p {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    right: 37%;
+    top: 69%;
+    font-size: 0px;
+    fill: white;
+    transform: rotate(-90deg);
+}
+/* mobile ready 576 px start */
+
+@media (min-width: 576px) {
+    img {
+        height: 20%;
+        width: 20%;
+    }
+    div.navcontainer {
+        height: 10em;
+        position: relative;
+    }
+    div.containerlogo {
+        height: 10em;
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+    div.containerlogo p {
+        margin: 0;
+        position: absolute;
+        top: 0%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-		height: 10px;
-		
-	   }
-
-div.menuitem1svg {
-		position:fixed;
-		left:0%;
-		height:100%;
-		width:40%;
-    	transform: rotate(45deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0); 
-		transition: all .4s ease-in;
-		opacity: 0.3;
-	   } 
-
-div.menuitem1svg:hover {
-        fill: rgb(203,153,201);
-		opacity: 1.0;
-       } 
-
-div.menuitem1svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		font-size:80%;
-		right:32%;
-		top:28%;
-		fill: white;
-		transform:rotate(-90deg);
-}
-
-div.menuitem2svg {
-		position:fixed;
-		height:100%;
-		width:40%;
-		left:30%;
-    	transform: rotate(45deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0);  
-		transition: all .4s ease-in; 
-		opacity: 0.3;
-	   } 
-
-div.menuitem2svg:hover {
-        fill: rgb(201,201,255);
-		opacity: 1.0;
-       } 
-
-div.menuitem2svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		right:35%;
-		top:30%;
-		font-size:80%;
-		fill: white;
-		transform:rotate(-90deg);
-		
-}	   	    	    	   
-
-div.menuitem3svg {
-	position:fixed;
-		height:100%;
-		width:40%;
-		left:60%;
-    	transform: rotate(45deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0); 
-		transition: all .4s ease-in; 
-		opacity: 0.3; 
-		
-	   } 
-
-div.menuitem3svg:hover {
-        fill: rgb(119,158,203);
-		opacity: 1.0;
-       } 
-
-div.menuitem3svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		right:35%;
-		top:30%;
-		font-size:80%;
-		fill: white;
-		transform:rotate(-90deg);
-}	   	    	    
-
-div.menuitem4svg {
-	position:fixed;
-		height:100%;
-		width:40%;
-		left:92%;
-    	transform: rotate(45deg);
-		fill:white;
-		stroke-width:10px;
-		stroke:rgb(0,0,0);  
-		transition: all .4s ease-in; 
-		opacity: 0.3; 
-	   }
-
-div.menuitem4svg:hover {
-        fill: rgb(225,247,213);
-		opacity: 1.0;
-       }
-
-div.menuitem4svg p {
-		position:fixed;
-		width: 100%;
-		height: auto;
-		right:37%;
-		top:35%;
-		font-size:80%;
-		fill: white;
-		transform:rotate(-90deg);	
-}	     	   
+        height: 10px;
+    }
+    div.menuitem1svg {
+        position: fixed;
+        left: 0%;
+        height: 100%;
+        width: 40%;
+        transform: rotate(45deg);
+        fill: white;
+        stroke-width: 10px;
+        stroke: rgb(0, 0, 0);
+        transition: all .4s ease-in;
+        opacity: 0.3;
+    }
+    div.menuitem1svg:hover {
+        fill: rgb(203, 153, 201);
+        opacity: 1.0;
+    }
+    div.menuitem1svg p {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+        right: 32%;
+        top: 28%;
+        fill: white;
+        transform: rotate(-90deg);
+    }
+    div.menuitem2svg {
+        position: fixed;
+        height: 100%;
+        width: 40%;
+        left: 30%;
+        transform: rotate(45deg);
+        fill: white;
+        stroke-width: 10px;
+        stroke: rgb(0, 0, 0);
+        transition: all .4s ease-in;
+        opacity: 0.3;
+    }
+    div.menuitem2svg:hover {
+        fill: rgb(201, 201, 255);
+        opacity: 1.0;
+    }
+    div.menuitem2svg p {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        right: 35%;
+        top: 30%;
+        font-size: 80%;
+        fill: white;
+        transform: rotate(-90deg);
+    }
+    div.menuitem3svg {
+        position: fixed;
+        height: 100%;
+        width: 40%;
+        left: 60%;
+        transform: rotate(45deg);
+        fill: white;
+        stroke-width: 10px;
+        stroke: rgb(0, 0, 0);
+        transition: all .4s ease-in;
+        opacity: 0.3;
+    }
+    div.menuitem3svg:hover {
+        fill: rgb(119, 158, 203);
+        opacity: 1.0;
+    }
+    div.menuitem3svg p {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        right: 35%;
+        top: 30%;
+        font-size: 80%;
+        fill: white;
+        transform: rotate(-90deg);
+    }
+    div.menuitem4svg {
+        position: fixed;
+        height: 100%;
+        width: 40%;
+        left: 92%;
+        transform: rotate(45deg);
+        fill: white;
+        stroke-width: 10px;
+        stroke: rgb(0, 0, 0);
+        transition: all .4s ease-in;
+        opacity: 0.3;
+    }
+    div.menuitem4svg:hover {
+        fill: rgb(225, 247, 213);
+        opacity: 1.0;
+    }
+    div.menuitem4svg p {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        right: 37%;
+        top: 35%;
+        font-size: 80%;
+        fill: white;
+        transform: rotate(-90deg);
+    }
+    /* mobile ready end 576px */
 }
